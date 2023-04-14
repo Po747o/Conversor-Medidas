@@ -28,7 +28,7 @@
             CONVERSOR DE MEDIDAS
         </TextBlock>
 
-        <StackPanel Grid.Row="0" Margin="246,87,280,87" Grid.ColumnSpan="2" Grid.RowSpan="2">
+        <StackPanel Grid.Row="0" Margin="229,87,280,87" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="NaN">
             <Label Content="Label 0" />
             <ComboBox x:Name="cbTipo" SelectionChanged="cbTipo_SelectionChanged" >
                 <ComboBoxItem>Selecione um tipo de conversão</ComboBoxItem>
