@@ -29,24 +29,44 @@
         </TextBlock>
 
         <StackPanel Grid.Row="0" Margin="229,87,280,87" Grid.ColumnSpan="2" Grid.RowSpan="2" Width="NaN">
-            <Label Content="Label 0" />
+            <Label Content="Converter:" />
             <ComboBox x:Name="cbTipo" SelectionChanged="cbTipo_SelectionChanged" >
                 <ComboBoxItem>Selecione um tipo de conversão</ComboBoxItem>
                 <ComboBoxItem>
                     Centimetros para Metros
                 </ComboBoxItem>
                 <ComboBoxItem >
-                    Metros para Kilometros
+                    Metros para Centimetros
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Metros para Quilometros
                 </ComboBoxItem>
                 <ComboBoxItem >
-
+                    Quilometros para Metros
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Decimal para Porcentagem
+                </ComboBoxItem>
+                <ComboBoxItem >
+                    Porcentagem para Decimal
                 </ComboBoxItem>
             </ComboBox>
 
 
         </StackPanel>
-        <TextBox x:Name="edValor1" TextWrapping="Wrap" Text="TextBox" Margin="110,91,170,109" Grid.Row="1" />
 
+        <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center">
+            <Label  Name="label1" Content="Converter:" Margin="50,16,150,0" />
+            <TextBox x:Name="edValor1" TextWrapping="Wrap" Text="TextBox" Margin="50,5,150,42" Grid.Row="1" Height="33" Width="204" />
+        </StackPanel>
 
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
+            <Label  Name="label2" Content="Converter:" Margin="50,16,150,0" />
+            <TextBox x:Name="edValor2" TextWrapping="Wrap" Text="TextBox" Margin="50,5,150,42" Grid.Row="1" Height="33" Width="204" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
+            <Button x:Name="btConverter" Height="37" Width="87" Click="btConverter_Click">Converter</Button>
+        </StackPanel>
     </Grid>
 </Window>
