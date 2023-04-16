@@ -55,18 +55,23 @@
 
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center">
-            <Label  Name="label1" Content="Converter:" Margin="50,16,150,0" />
-            <TextBox x:Name="edValor1" TextWrapping="Wrap" Text="TextBox" Margin="50,5,150,42" Grid.Row="1" Height="33" Width="204" />
+        
+        <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label  Name="label1" Content="Converter:" />
+            <TextBox x:Name="edValor1" TextWrapping="Wrap" Text="TextBox"  Grid.Row="1" Height="28" Width="185" HorizontalAlignment="Center" />
         </StackPanel>
 
-        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center">
-            <Label  Name="label2" Content="Converter:" Margin="50,16,150,0" />
-            <TextBox x:Name="edValor2" TextWrapping="Wrap" Text="TextBox" Margin="50,5,150,42" Grid.Row="1" Height="33" Width="204" />
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Label  Name="label2" Content="Converter:"  />
+            <TextBox x:Name="edValor2" TextWrapping="Wrap" Text="TextBox" Margin="0 0 0 0" Grid.Row="1" Height="28" Width="185" HorizontalAlignment="Center"/>
         </StackPanel>
 
-        <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
-            <Button x:Name="btConverter" Height="37" Width="87" Click="btConverter_Click">Converter</Button>
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Width="102">
+            <Label>para</Label>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center">
+            <Button x:Name="btConverter" Height="37" Width="106" Click="btConverter_Click" Content="CONVERTER"/>
         </StackPanel>
     </Grid>
 </Window>

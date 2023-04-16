@@ -115,7 +115,7 @@ namespace ConversorDeMedidas
                     label1.Content = "Porcentagem";
                     label2.Content = "Decimal";
                     edValor1.IsEnabled = true;
-                    edValor1.Text = "0%";
+                    edValor1.Text = "0";
                     edValor2.IsEnabled = true;
                     edValor2.Text = "0";
                     btConverter.IsEnabled = true;
